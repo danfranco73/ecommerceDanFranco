@@ -1,6 +1,6 @@
 import{Component}from 'react';
 class ClassComponent extends Component{
-     tender(){
+     render(){
         return(
             <div>
                 <h2>
