@@ -1,13 +1,15 @@
 .App {
   text-align: center;
 }
-.navbar-brand{
+
+.navbar-brand {
   color: none;
   background-color: none;
   justify-content: right;
   align-content: center;
   width: 20%;
-  border-radius: 80px;
+  border-radius: 100px;
+  list-style: none;
 }
 .App-logo {
   height: 40vmin;

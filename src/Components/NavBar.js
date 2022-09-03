@@ -1,6 +1,5 @@
 import "../App.css"
 import CartImg from "./CartWidget/CartImg";
-import cartlogo from "./img/Loguito.jpg"
 
 const NavBar = () => {
   return (
@@ -68,9 +67,6 @@ const NavBar = () => {
               </li>
             </ul>
             <CartImg />
-            {/* <li>
-              <img src={cartlogo} className="navbar-brand" alt="logo" />
-            </li> */}
           </div>
         </div>
       </nav>
