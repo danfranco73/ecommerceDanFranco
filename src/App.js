@@ -1,24 +1,39 @@
 import "./App.css";
-import { useState } from "react";
+import Parent from "./Components/Parent/Parent"; 
+import ClassComponent from "./Components/ClassComponent/ClassComponent"; 
 import Counter from "./Components/Counter/Counter";
-import CicloVida from "./Components/CicloVida/CicloVida";
 import NavBar from "./Components/NavBar";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 
+const Titulo = () => {
+  return <h1> Hola Lucho</h1>;
+};
+
 function App() {
-  const [validacion, setValidacion] = useState(false);
-  const validar = () => {
-    setValidacion(!validacion);
-  };
-  <div className="App">
-    <header className="App-header">
-      <NavBar />
-      <ItemListContainer greeting={"Bienvenidos a TP Mayorista"} />
-      <h2> This is a function component</h2>
-      <CicloVida validacion={validacion} />
-      <button onCLick={validar}>Actualizo el State</button>
-      <Counter />
-    </header>
-  </div>;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <NavBar />
+        <ItemListContainer greeting={"Bienvenidos a TP Mayorista"} />
+        <Parent esUnComponente={Titulo}>
+          {" "}
+          {/* funcion parent */}
+          <div>
+            <h1>Esto es un children</h1>{" "}
+            {/* si hay 1 solo div es un objeto y no un array */}
+          </div>
+          <div>
+            <h2>Este el el hijo del childen</h2>
+          </div>
+        </Parent>
+         <h2> This is a class component</h2>
+        <ClassComponent  />
+        <h2> This is a function component</h2>
+        <Counter />
+      </header>
+    </div>
+  );
 }
+
 export default App;
+
