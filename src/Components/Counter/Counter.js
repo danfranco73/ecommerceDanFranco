@@ -1,21 +1,27 @@
-import {  useState } from "react";
+import { useState } from "react";
 
-const Counter = () => {
-  const [initialState, setState] = useState(100);
+const Counter = (props) => {
+  const [items, setItems] = useState(0);
+
+  /*  const [initialState, setState] = useState(0); */
   console.log("Me renderizo otra vez");
-  const suma = () => {
-    setState(initialState - 1);
-  };
+
+  const suma = () =>
+    items <= props.stock - 1
+      ? setItems(items + 1)
+      : alert("No hay mas stock disponible");
+
   const resta = () => {
-    setState(initialState - 1);
+    setItems(items - 1);
   };
   return (
-    <div>
-      Contador
-      <h3>{initialState}</h3>
+    <>
+      El stock es de {props.stock} unidades
       <button onCLick={resta}>-</button>
+      <div>{items}</div>
       <button onCLick={suma}>+</button>
-    </div>
+      Tengo {items} items.
+    </>
   );
 };
 
