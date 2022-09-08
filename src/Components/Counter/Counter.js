@@ -12,14 +12,16 @@ const Counter = (props) => {
       : alert("No hay mas stock disponible");
 
   const resta = () => {
-    setItems(items - 1);
+    items >= 1 
+      ? setItems(items - 1)
+      : alert("Debe Pedir al menos 1 producto");
   };
   return (
     <>
       El stock es de {props.stock} unidades
-      <button onCLick={resta}>-</button>
+      <button onClick={resta}>-</button>
       <div>{items}</div>
-      <button onCLick={suma}>+</button>
+      <button onClick={suma}>+</button>
       Tengo {items} items.
     </>
   );
