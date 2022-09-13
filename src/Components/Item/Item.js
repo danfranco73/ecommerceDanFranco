@@ -1,7 +1,6 @@
 import "./items.css";
 import Counter from "../Counter/Counter";
 
-
 const Item = ({ nombre, precio, imagen, stock }) => {
   return (
     <div className="items">

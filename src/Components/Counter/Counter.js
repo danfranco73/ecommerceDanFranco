@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../counter.css";
+import "./counter.css";
 
 const Counter = (sku) => {
   const [items, setItems] = useState(0);

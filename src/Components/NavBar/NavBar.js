@@ -1,12 +1,12 @@
-import "../App.css";
-import CartImg from "./CartWidget/CartImg";
+import "./NavBar.css";
+import CartImg from "../CartWidget/CartImg";
 
 const NavBar = () => {
   return (
-    <div className="container">
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+    <div>
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid bg-warning">
+          <a className="navbar-brand" href="../../index.html">
             TP Mayorista
           </a>
           <button
@@ -22,24 +22,24 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav displa">
-              <li class="nav-item">
+              <li className="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
                   Inicio
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Productos
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Ofertas
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -47,19 +47,19 @@ const NavBar = () => {
                 >
                   Mas...
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       Facebook
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       Contacto
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       FAQ
                     </a>
                   </li>

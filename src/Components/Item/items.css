@@ -1,15 +1,15 @@
 .items {
     height:auto;
     width: 300px;;
-    background-color:yellow;
-    padding-top: 15px;
-    color:gray;
-    text-shadow: 0.5px black;
+    background-color: #e6931f;
+    padding: 5px;
+    color:black;
+    text-shadow: gray;
     border-width: 2px;
     border-color: gray;
     border-style: solid;
     border-radius: 10%; 
-    margin: 30px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,19 +19,15 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    text-transform: uppercase;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    word-break: break-all;
-    overflow-wrap: break-word;
     text-overflow: ellipsis;
     overflow: hidden;
     text-overflow: clip;
-    text-overflow: ellipsis;
 }
 
 .img-sku{
     border-radius: 50%;
+    border: solid;
+    border-width: 0.5px;
     width: 150px;
 }
 
@@ -41,12 +37,6 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    text-overflow: ellipsis;
-    text-overflow: clip;
 }
 .counter {
     display: flex;

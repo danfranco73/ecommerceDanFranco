@@ -1,0 +1,27 @@
+
+.navbar{
+    height: 50px;
+    position:fixed;
+    overflow: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+  
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: none;
+    justify-content: right;
+    align-content: center;
+    border-radius: auto;
+    list-style: none;
+    inline-size: inherit;
+  }
+  
+  .navbar-brand .img {
+    width: 8%;
+    border-radius: 250px;
+  }

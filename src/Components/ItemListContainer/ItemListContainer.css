@@ -1,0 +1,14 @@
+.ItemListContainer{
+    margin-top: 20px;
+    width: 100%;
+    display: table-column-group;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.h3{
+    margin-top: 100px;
+    margin-bottom: 5px;
+}

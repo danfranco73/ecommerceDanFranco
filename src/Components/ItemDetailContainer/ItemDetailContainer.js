@@ -1,29 +1,29 @@
-import data from '../ItemListContainer/Data';
+import data from "./Data1";
 import { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import "./I-D-Container.css"
+import "../ItemListContainer/ItemListContainer.css";
+
 
 const ItemDetailContainer = () => {
   const [Producto, setProducto] = useState([]);
-  useEffect(()=>{
-      const getProducto = new Promise((resolve)=>{
-          setTimeout(()=>{
-              resolve(data);
-          },2000);
-      }
-      );
-      getProducto.then((response)=>{
-          setProducto(response);
-      });
-      getProducto.catch((error)=>{
-          console.log(error);
-      })
-  },[]);
+  useEffect(() => {
+    const getProducto = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(data);
+      }, 2000);
+    });
+    getProducto.then((response) => {
+      setProducto(response);
+    });
+    getProducto.catch((error) => {
+      console.log(error);
+    });
+  }, []);
   return (
-    <>
-      <h1 className="I-D-Container">Producto Detallado</h1>
-      <ItemDetail itemD={Producto} />
-    </>
+    <div ClassName="ItemListContainer">
+      <h3>Producto Detallado</h3>
+      <ItemDetail lista={Producto} />
+    </div>
   );
 };
 

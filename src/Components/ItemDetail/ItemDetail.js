@@ -1,25 +1,28 @@
 import Item from "../Item/Item";
-import "../Item/ItemDetail.css";
+import "../ItemList/list-container.css";
 
-const ItemDetail = ({ itemD }) => {
-
+ 
+const ItemDetail = ({ lista }) => {
   return (
-    
-    <>
-    {itemD.map((sku) => {
-      return (
-        <Item className="items-detail box"
-
-          key={sku.id}
-          nombre={sku.nombre}
-          precio={sku.precio}
-          imagen={sku.imagen}
-          stock={sku.stock} />
-      );
-    })}
-    </>
+    <div className="list-container">
+      <div>
+        {lista.map((product) => {
+          return (
+            <Item
+              className="items"
+              key={product.id[1]}
+              nombre={product.nombre}
+              precio={product.precio}
+              imagen={product.imagen}
+              stock={product.stock}
+            />
+          );
+        })}
+      </div>
+    </div>
   );
 };
+
 
         
         export default ItemDetail;
