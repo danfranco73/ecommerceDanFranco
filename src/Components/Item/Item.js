@@ -1,11 +1,15 @@
-import data from "../ItemListContainer/Data";
-const Item = ({nombre, precio, imagen}) => {
+import "./items.css";
+import Counter from "../Counter/Counter";
+
+
+const Item = ({ nombre, precio, imagen, stock }) => {
   return (
-    (<>
-      <img width={'200px'} src={imagen} alt={nombre} />
-      <h2>{nombre}</h2>
-      <h3>{precio}</h3>
-    </>)
+    <div className="items">
+      <img className="img-sku" src={imagen} alt={nombre} />
+      <h2 className="desc-sku">{nombre}</h2>
+      <h3 className="precio-sku">$ {precio}</h3>
+      <Counter sku={stock} />
+    </div>
   );
 };
 

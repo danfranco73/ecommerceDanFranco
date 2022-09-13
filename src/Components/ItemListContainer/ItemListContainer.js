@@ -9,15 +9,15 @@ const ItemListContainer = ()=>{
             setTimeout(()=>{
                 resolve(data);
             },2000);
-        }
-        );
+        });
         getProducts.then((response)=>{
             setProductList(response);
         });
         getProducts.catch((error)=>{
             console.log(error);
-        })
+        });
     },[]);
+    
     
     return(
         <>

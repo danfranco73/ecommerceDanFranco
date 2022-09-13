@@ -1,12 +1,12 @@
-import "../App.css"
+import "../App.css";
 import CartImg from "./CartWidget/CartImg";
 
 const NavBar = () => {
   return (
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+    <div className="container">
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             TP Mayorista
           </a>
           <button
@@ -20,8 +20,8 @@ const NavBar = () => {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav displa">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
                   Inicio

@@ -1,18 +1,24 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Counter from "./Components/Counter/Counter";
-
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
-
-
+/* import Counter from "./Components/Counter/Counter";
+ */import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+/* import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+ */
 function App() {
-  const stock = 20
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar />
+      <NavBar />
+      <header class="App-header">
+        {/*         <div class="body-page">
+         */}{" "}
         <ItemListContainer />
-        <Counter stock = {stock}/>
+{/*         <div>
+          <Counter stock={stock} />
+        </div>
+ */}        {/*           <ItemDetailContainer />
+         */}
+        {/*         </div>
+         */}{" "}
       </header>
     </div>
   );

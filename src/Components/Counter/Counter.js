@@ -1,29 +1,29 @@
 import { useState } from "react";
+import "../../counter.css";
 
-const Counter = (props) => {
+const Counter = (sku) => {
   const [items, setItems] = useState(0);
 
   /*  const [initialState, setState] = useState(0); */
   console.log("Me renderizo otra vez");
 
-  const suma = () =>
-    items <= props.stock - 1
+  const suma = (sku) =>
+    items <= sku.stock - 1
       ? setItems(items + 1)
-      : alert("No hay mas stock disponible");
+      : alert("Agotado");
 
-  const resta = () => {
-    items >= 1 
-      ? setItems(items - 1)
-      : alert("Debe Pedir al menos 1 producto");
+  const resta = (sku) => {
+    items >= sku.stock + 1 ? setItems(items - 1) : alert("Debe Pedir al menos 1 producto");
   };
   return (
-    <>
-      El stock es de {props.stock} unidades
-      <button onClick={resta}>-</button>
-      <div>{items}</div>
-      <button onClick={suma}>+</button>
-      Tengo {items} items.
-    </>
+    <div>
+      <h6>Stock {sku.stock} unidades</h6>
+      <div className= "counter-app">
+        <button onClick={resta}>-</button>
+        <div>{items}</div>
+        <button onClick={suma}>+</button>
+      </div>
+    </div>
   );
 };
 
