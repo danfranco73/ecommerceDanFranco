@@ -1,14 +1,15 @@
 import "./NavBar.css";
-import CartImg from "../CartWidget/CartImg";
+import CartImg from "../../Pages/CartWidget/CartImg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid bg-warning">
-          <a className="navbar-brand" href="../../index.html">
+          <Link className="navbar-brand" to="/">
             TP Mayorista
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -23,50 +24,75 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav displa">
               <li className="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Inicio
-                </a>
+                <Link className="nav-link" to="/">
+                  Catálogo
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Productos
-                </a>
+                <Link className="nav-link" to="/category/Aceites">
+                  Aceites
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Ofertas
-                </a>
+                <Link className="nav-link" to="/category/Yerbas">
+                  Yerbas
+                </Link>
+              </li>
+              
+              <li className="nav-item">
+                <Link className="nav-link" to="login">
+                  Login
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <button
                   className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  style={{
+                    color: "black", 
+                  backgroundcolor: "transparent",
+                  borderRoundColor: "none !important",
+                  borderRadius: "100px",  
+                }}
                 >
-                  Mas...
-                </a>
+                  Más...
+                </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link
+                      className="dropdown-item"
+                      to="FB"
+                      href="https://www.facebook.com/todopymesmayorista/"
+                    >
                       Facebook
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link
+                      className="dropdown-item"
+                      to="/item/:itemId"
+                      href="https://www.instagram.com/tpmayorista/"
+                    >
+                      Instagram
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="FAQ">
+                      Preguntas Frecuentes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="contact">
                       Contacto
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      FAQ
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
             </ul>
+            <Link to="/Carrito">
             <CartImg />
+            </Link>
           </div>
         </div>
       </nav>

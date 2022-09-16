@@ -5,12 +5,14 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 20px;
 }
 
 
-.body-page {
+.app-main {
   background-image: url("/public/img/commerce-px-shopping-cart.jpg");
   color: #282c34;
   font-size: 1.5rem;
@@ -22,8 +24,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-  justify-content: center;
+  height: 80%;
+  justify-content: space-between;
   align-items: center;
   font-family: "Roboto", sans-serif;
 }
@@ -31,7 +33,6 @@
 .App-header {
   background-color: #282c34;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

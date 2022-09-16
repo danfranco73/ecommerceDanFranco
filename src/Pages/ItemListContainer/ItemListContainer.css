@@ -1,10 +1,9 @@
 .ItemListContainer{
     margin-top: 20px;
     width: 100%;
-    display: table-column-group;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     background-color: white;
 }
 

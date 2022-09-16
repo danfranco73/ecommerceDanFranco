@@ -1,22 +1,27 @@
 import Item from "../Item/Item";
 import "./list-container.css";
+import { Link } from "react-router-dom";
 
 const ItemList = ({ lista }) => {
+  console.log(ItemList);
   return (
-    <div className="list-container">
+    <div >
       <div>
-        {lista.map((product) => {
-          return (
-            <Item
-              className="items"
-              key={product.id}
-              nombre={product.nombre}
-              precio={product.precio}
-              imagen={product.imagen}
-              stock={product.stock}
-            />
-          );
-        })}
+        {lista.map((product) => (
+          <Link
+            key={product.id}
+            to={`/detail/${product.id}`}
+            style={{ textDecoration: "none" }}
+          >
+              <Item
+                nombre={product.nombre}
+                precio={product.precio}
+                imagen={product.imagen}
+                categoria={product.categoria}
+                stock={product.stock}
+              />
+          </Link>
+        ))}
       </div>
     </div>
   );

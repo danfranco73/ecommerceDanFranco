@@ -1,5 +1,5 @@
-import "../../App.css"
-import cartlogo from "../img/shopping-cart-icon-.jpg"
+import "./CartImg.css";
+import cartlogo from "../../Components/img/shopping-cart-icon-.jpg"
 
 const CartImg = () => {
 	return ( 
