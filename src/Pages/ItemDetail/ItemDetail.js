@@ -15,7 +15,7 @@ const ItemDetail = ({ id, nombre, precio, imagen, stock, categoria }) => {
           imagen={imagen}
           stock={stock}
         />
-        ); )
+
       </div>
     </div>
   );
