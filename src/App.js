@@ -11,13 +11,13 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <div className="App">
+        <div>
           <header>
             <NavBar />
           </header>
           <main>
             <Routes>
-              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/" element={<ItemListContainer />}/>
               <Route path="category/:categoria" element={<ItemCategory />} />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />
               <Route path="login" element={<div>Página de Login</div>} />

@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
   }, [categoria]);
 
   return (
-    <div className="ItemListContainer text-focus-in">
+    <div className="ItemListContainer">
       <Item
         {...product}
         id={product.id}

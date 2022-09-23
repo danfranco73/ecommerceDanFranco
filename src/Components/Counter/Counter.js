@@ -1,12 +1,10 @@
 import { useState } from "react";
 import "./counter.css";
 import { Link } from "react-router-dom";
-/* import { useContext } from "react";
-import { CartContext } from "../../context/CartContext";
- */
 
-const Counter = (stock) => {
-  const [items, setItems] = useState();  
+const stock = 10;
+const Counter = () => {
+  const [items, setItems] = useState(0);
 
   const suma = () =>
     items <= stock - 1 ? setItems(items + 1) : alert("Stock insuficiente");
@@ -23,14 +21,14 @@ const Counter = (stock) => {
         <button onClick={suma}>+</button>
       </div>
       <div>
-        {items > 0 ? (
-          <Link to="/Carrito">
-          <button className="btn btn-success btn-sm">Ir al Carrito</button>
-        </Link>)  : (
-          <button className="btn btn-success" disabled hidden></button>
-        )}
-      </div>
-      
+        <Link to="/Carrito">
+          {items > 0 ? (
+            <button className="btn btn-success">+ carrito</button>
+          ) : (
+            <button className="btn btn-success" disabled hidden></button>
+          )}
+        </Link>
+      </div>      
     </div>
   );
 };

@@ -11,7 +11,7 @@ const NavBar = () => {
             TP Mayorista
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -19,7 +19,7 @@ const NavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav displa">
@@ -49,12 +49,6 @@ const NavBar = () => {
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{
-                    color: "black", 
-                  backgroundcolor: "transparent",
-                  borderRoundColor: "none !important",
-                  borderRadius: "100px",  
-                }}
                 >
                   Más...
                 </button>

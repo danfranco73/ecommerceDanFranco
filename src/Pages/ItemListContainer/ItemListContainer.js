@@ -1,7 +1,6 @@
 import data from "./Data";
 import { useEffect, useState } from "react";
 import ItemList from "../../Components/ItemList/ItemList";
-import "./ItemListContainer.css";
 
 const ItemListContainer = () => {  
   const [productList, setProductList] = useState([]);
@@ -20,7 +19,7 @@ const ItemListContainer = () => {
   }, []);
 
   return (
-    <div className="container d-flex flex-row" >
+    <div>
       <ItemList lista={productList} />
     </div>
   );

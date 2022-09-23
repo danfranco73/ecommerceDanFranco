@@ -1,0 +1,74 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  margin-top: 50px;
+  padding: 5px;
+  gap: 10px;
+  width: auto;
+}
+
+.detail-sku {
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+  gap: 10px;
+}
+.items {
+  background-color: rgb(222, 228, 155);
+  font-stretch: condensed;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.img-sku {
+  width: 300px;
+}
+
+.desc-sku {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.precio-sku {
+  color: blue;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  border: solid 0.2px blue;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.detail-sku {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.counter-detail {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}

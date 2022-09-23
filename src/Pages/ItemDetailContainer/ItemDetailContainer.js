@@ -1,6 +1,5 @@
 import data from "../ItemListContainer/Data";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import "../ItemListContainer/ItemListContainer.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -23,7 +22,7 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <div className="ItemListContainer">
+    <div>
       <ItemDetail
         {...product}
         id={product.id}

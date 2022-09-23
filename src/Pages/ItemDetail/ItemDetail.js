@@ -1,16 +1,26 @@
 import Counter from "../../Components/Counter/Counter";
-import "../../Components/Item/items.css";
+import "./itemDetail.css";
 
-const ItemDetail = ({ id, nombre, precio, imagen, stock, categoria }) => {
+export const ItemDetail = ({ ...product }) => {
   return (
-    <div className="items">
-      key={id}
-      <img className="img-sku" src={imagen} alt={nombre} />
-      <h2 className="desc-sku">{nombre}</h2>
-      <h3 className="precio-sku">$ {precio}</h3>
-      <h3 className="precio-sku">Stock: {stock}</h3>
-      <h3 className="precio-sku">Categoria: {categoria}</h3>
-      <Counter stock={stock} />
+    <div className="box">
+      <div>
+        <img className="img-sku" src={product.imagen} alt={product.nombre} />
+      </div>
+      <div className="detail-sku">
+        <div className="items">
+          <h2 className="desc-sku">Artículo: {product.nombre}</h2>
+          <p className="desc-sku">Categoría: {product.categoria}</p>
+          <p className="desc-sku">Descripción: {product.descripcion}</p>
+        </div>
+        <div className="box2">
+          <p className="precio-sku">${product.precio}</p>
+          <p className="desc-sku">Stock: {product.stock} unidades</p>
+          <div className="counter-detail">
+            <Counter stock={product.stock} id={product.id} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
