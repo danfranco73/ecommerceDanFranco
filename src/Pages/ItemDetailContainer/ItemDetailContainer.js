@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     const getProducts = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(data);
-      }, 2000);
+      }, 1000);
     });
     getProducts.then((response) => {
       setProduct(response.find((item) => item.id === id));
@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <div className="ItemListContainer text-focus-in">
+    <div className="ItemListContainer">
       <ItemDetail
         {...product}
         id={product.id}

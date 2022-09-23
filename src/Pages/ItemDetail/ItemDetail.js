@@ -1,22 +1,16 @@
-import Item from "../../Components/Item/Item";
-import "../../Components/ItemList/list-container.css";
+import Counter from "../../Components/Counter/Counter";
+import "../../Components/Item/items.css";
 
 const ItemDetail = ({ id, nombre, precio, imagen, stock, categoria }) => {
-  console.log(ItemDetail);
   return (
-    <div className="list-container text-focus-in">
-      <div>
-        <Item
-          className="items"
-          key={id}
-          categoria={categoria}
-          nombre={nombre}
-          precio={precio}
-          imagen={imagen}
-          stock={stock}
-        />
-
-      </div>
+    <div className="items">
+      key={id}
+      <img className="img-sku" src={imagen} alt={nombre} />
+      <h2 className="desc-sku">{nombre}</h2>
+      <h3 className="precio-sku">$ {precio}</h3>
+      <h3 className="precio-sku">Stock: {stock}</h3>
+      <h3 className="precio-sku">Categoria: {categoria}</h3>
+      <Counter stock={stock} />
     </div>
   );
 };
