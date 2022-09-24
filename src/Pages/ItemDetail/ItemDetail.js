@@ -9,7 +9,7 @@ export const ItemDetail = ({ ...product }) => {
   const [items, setItems] = useState(0);
 
   function onAdd(product) {
-      addToCart(product,product.id, items);
+      addToCart(product, items);
   }
 
   return (
