@@ -11,4 +11,7 @@
   .navbar-brand .img {
     width: 8%;
     border-radius: 250px;
+    border: solid;
+    border-color: black;
+    border-width: 0.2px;    
   }

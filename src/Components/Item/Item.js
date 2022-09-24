@@ -1,11 +1,15 @@
 import "./items.css";
 
-const Item = ({ nombre, precio, imagen, categoria}) => {
+const Item = ({ nombre, imagen }) => {
   return (
-    <div className="items">
-      <img className="img-sku" src={imagen} alt={nombre} />
-      <h2 className="desc-sku">{nombre}</h2>
-    </div>
+      <div className="item-box">
+        <div className="size">
+          <img className="item-img" src={imagen} alt={nombre} />
+        </div>
+        <div className="item-desc">
+          <p>{nombre}</p>
+        </div>
+      </div>
   );
 };
 

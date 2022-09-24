@@ -10,6 +10,7 @@ export const ItemDetail = ({ ...product }) => {
       <div className="detail-sku">
         <div className="items">
           <h2 className="desc-sku">Artículo: {product.nombre}</h2>
+          <p className="desc-sku">Marca: {product.marca}</p>
           <p className="desc-sku">Categoría: {product.categoria}</p>
           <p className="desc-sku">Descripción: {product.descripcion}</p>
         </div>

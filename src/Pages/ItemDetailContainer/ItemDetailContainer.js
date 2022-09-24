@@ -27,6 +27,7 @@ const ItemDetailContainer = () => {
         {...product}
         id={product.id}
         nombre={product.nombre}
+        marca={product.marca}
         precio={product.precio}
         imagen={product.imagen}
         stock={product.stock}

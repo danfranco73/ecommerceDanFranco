@@ -1,14 +1,15 @@
-.list-container {
-  margin-top: 30px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.list {
   width: 100%;
-  height: 100%;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  transition: all 0.3s ease;
+}
+
+.prod {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 5px;
+  width: min-content;
+  border-radius: 15px;
+  width: 100%;
 }

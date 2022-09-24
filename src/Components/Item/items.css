@@ -1,51 +1,37 @@
-.items {
-    height:auto;
-    width: 300px;;
-    background-color: none;
-    padding: 5px;
-    color:black;
-    text-shadow: gray;
-    border-width: 2px;
-    border-color: gray;
-    border-style: solid;
-    border-radius: 10%; 
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-overflow: clip;
+.item-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  border: solid 0.2px black;
+  margin-top: 30px;
+  padding: 5px;
+  gap: 10px;
+  width: 100%;
+  height: 80%;
 }
 
-.img-sku{
-    border-radius: 50%;
-    border: solid;
-    border-width: 0.5px;
-    width: 150px;
+.size {
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 5px;
+  gap: 10px;
+}
+.item-desc {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: solid 0.2px black;
+  width: 100%;
+  border-radius: 15px;
+  background-color: aquamarine;
 }
 
-.desc-sku {
-    width: 80%;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
+.item-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
 }
-.counter {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.precio-sku{
-    color: blue;
-    font-weight: bold;
-}
-

@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg ">
-        <div className="container-fluid bg-warning">
+        <div className="container-fluid bg-info">
           <Link className="navbar-brand" to="/">
             TP Mayorista
           </Link>
@@ -22,7 +22,7 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav displa">
+            <ul className="navbar-nav display">
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Catálogo
@@ -44,7 +44,7 @@ const NavBar = () => {
                   Login
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown bg-info">
                 <button
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
@@ -85,7 +85,7 @@ const NavBar = () => {
               </li>
             </ul>
             <Link to="/Carrito">
-            <CartImg />
+              <CartImg />
             </Link>
           </div>
         </div>
