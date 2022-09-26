@@ -2,10 +2,10 @@ import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import ItemListContainer from "./Pages/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./Pages/ItemDetailContainer/ItemDetailContainer";
-import CartWidget from "./Pages/CartWidget/CartImg";
 import ItemCategory from "./Pages/ItemCategory/ItemCategory";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./Context/CartProvider";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
               <Route path="contact" element={<div>Página de Contacto</div>} />
               <Route path="FAQ" element={<div>PreguntasFrecuentes</div>} />
               <Route path="/FB" element={<div>Página de Facebook</div>} />
-              <Route path="/Carrito" element={<CartWidget />} />
+              <Route path="/Cart" element={<Cart />} />
             </Routes>
           </main>
         </div>

@@ -84,7 +84,7 @@ const NavBar = () => {
                 </ul>
               </li>
             </ul>
-            <Link to="/Carrito">
+            <Link to="/Cart">
               <CartImg />
             </Link>
           </div>

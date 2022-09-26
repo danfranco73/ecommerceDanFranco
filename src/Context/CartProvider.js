@@ -46,14 +46,14 @@ export const CartProvider = ({ children }) => {
     // Use this to get the total quantity of items in the cart
 
   const getTotalItems = () => {
-    return cart.reduce((acc, cartItem) => acc + cartItem.cantidad, 0);
+    return cart.reduce((acc, cartItem) => acc + cartItem.quantity, 0);
   };
 
     // Use this to get the total price of items in the cart
 
   const getTotalPrice = () => {
     return cart.reduce(
-      (acc, cartItem) => acc + cartItem.price * cartItem.quantity,
+      (acc, cartItem) => acc + cartItem.precio * cartItem.quantity,
       0
     );
   };

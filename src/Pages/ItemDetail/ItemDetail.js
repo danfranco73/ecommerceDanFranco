@@ -9,16 +9,16 @@ export const ItemDetail = ({ ...product }) => {
   const [items, setItems] = useState(0);
 
   function onAdd(product) {
-      addToCart(product, items);
+    addToCart(product, items);
   }
 
   return (
-    <div className="box">
-      <Link to="/">
-        <button className="btn btn-primary">Volver</button>
-      </Link>
-      <div>
+    <div className="box flex-container">
+      <div className="img-bt">
         <img className="img-sku" src={product.imagen} alt={product.nombre} />
+        <Link to="/">
+          <button className="btn btn-primary">Volver</button>
+        </Link>
       </div>
       <div className="detail-sku">
         <div className="items">
@@ -28,8 +28,8 @@ export const ItemDetail = ({ ...product }) => {
           <p className="desc-sku">Descripción: {product.descripcion}</p>
         </div>
         <div className="box2">
-          <p className="precio-sku">${product.precio}</p>
-          <p className="desc-sku">Stock: {product.stock} unidades</p>
+          <p className="precio-sku">${product.precio} c/u</p>
+          {/* <p className="desc-sku">Stock: {product.stock} unidades</p> */}
           <span>
             <b>Total: ${items * product.precio}</b>
           </span>
@@ -42,18 +42,17 @@ export const ItemDetail = ({ ...product }) => {
             />
           </div>
           <div>
-            {/* <Link to="/Carrito"> */}
-              {items > 0 ? (
-                <button
-                  className="btn btn-success"
-                  onClick={() => onAdd(product)}
-                >
-                  + carrito
-                </button>
-              ) : (
-                <button className="btn btn-success" disabled hidden></button>
-              )}
-           {/*  </Link> */}
+            <Link to="/Cart">ir al Carrito</Link>
+            {items > 0 ? (
+              <button
+                className="btn btn-success"
+                onClick={() => onAdd(product)}
+              >
+                + carrito
+              </button>
+            ) : (
+              <button className="btn btn-success btn-sm" disabled hidden></button>
+            )}
           </div>
         </div>
       </div>
