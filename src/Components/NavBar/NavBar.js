@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import CartImg from "../../Pages/CartWidget/CartImg";
+import CartImg from "../CartWidget/CartImg";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
