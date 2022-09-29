@@ -4,8 +4,8 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
 
-export const ItemDetail = ({ ...product }) => {
-  const { addToCart } = useContext(CartContext);
+export const ItemDetail = ({product, nombre, precio, categoria, descripcion, imagen, stock}) => {
+  const { addToCart, isInCart } = useContext(CartContext);
   const [items, setItems] = useState(0);
 
   function onAdd(product) {
@@ -15,28 +15,26 @@ export const ItemDetail = ({ ...product }) => {
   return (
     <div className="box flex-container">
       <div className="img-bt">
-        <img className="img-sku" src={product.imagen} alt={product.nombre} />
+        <img className="img-sku" src={imagen} alt={nombre} />
         <Link to="/">
           <button className="btn btn-primary">Volver</button>
         </Link>
       </div>
       <div className="detail-sku">
         <div className="items">
-          <h2 className="desc-sku">Artículo: {product.nombre}</h2>
-          <p className="desc-sku">Marca: {product.marca}</p>
-          <p className="desc-sku">Categoría: {product.categoria}</p>
-          <p className="desc-sku">Descripción: {product.descripcion}</p>
+          <h2 className="desc-sku">Artículo: {nombre}</h2>
+          <p className="desc-sku">Categoría: {categoria}</p>
+          <p className="desc-sku">Descripción: {descripcion}</p>
         </div>
         <div className="box2">
-          <p className="precio-sku">${product.precio} c/u</p>
-          {/* <p className="desc-sku">Stock: {product.stock} unidades</p> */}
+          <p className="precio-sku">${precio} c/u</p>
           <span>
-            <b>Total: ${items * product.precio}</b>
+            <b>Total: ${items * precio}</b>
           </span>
           <div className="counter-detail">
             <Counter
-              stock={product.stock}
-              precio={product.precio}
+              stock={stock}
+              precio={precio}
               items={items}
               setItems={setItems}
             />
@@ -46,7 +44,9 @@ export const ItemDetail = ({ ...product }) => {
             {items > 0 ? (
               <button
                 className="btn btn-success"
-                onClick={() => onAdd(product)}
+                onClick={isInCart(product.id)
+                  ? () => alert("El producto ya está en el carrito")
+                  : () => onAdd(product)}
               >
                 + carrito
               </button>

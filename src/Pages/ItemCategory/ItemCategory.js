@@ -4,7 +4,7 @@ import "../ItemListContainer/ItemListContainer.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const ItemDetailContainer = () => {
+const ItemCategory = () => {
   const [product, setProduct] = useState([]);
   const { categoria } = useParams();
 
@@ -37,5 +37,5 @@ const ItemDetailContainer = () => {
   );
 };
 
-export default ItemDetailContainer;
+export default ItemCategory;
 

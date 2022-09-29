@@ -3,7 +3,8 @@ import "./list-container.css";
 import { Link } from "react-router-dom";
 
 const ItemList = ({ lista }) => {
-  console.log(ItemList);
+
+
   return (
     <div className="list">
       <div className="prod">
@@ -14,8 +15,8 @@ const ItemList = ({ lista }) => {
             style={{ textDecoration: "none" }}
           >
               <Item
-                nombre={product.nombre}
-                imagen={product.imagen}
+                nombre={product.title}
+                imagen={product.image}
               />
           </Link>
         ))}

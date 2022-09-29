@@ -5,7 +5,7 @@ import { CartContext } from "../../Context/CartContext";
 
 const CartImg = () => {
   const { cart, getTotalItems } = useContext(CartContext);
-  console.log("cart", cart);    // <--- This is the cart's items);
+    
   return (
     <div className="cart-img">
       <li className="navbar-brand">

@@ -4,7 +4,7 @@ import "./Cart.css";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-  const { cart, clear, removeItem } = useContext(CartContext);
+  const { cart, clear, removeItem, getTotalPrice } = useContext(CartContext);
   return (
     <div className="cart-box">
       <Link to="/">
@@ -17,30 +17,49 @@ export const Cart = () => {
         </div>
       ) : (
         <div className="cart-inside">
-          {cart.map((item) => (
-            <div className="cart-item" key={item.id}>
-              <div>
-                <button
-                  className="btn btn-danger btn-sm"
-                  onClick={() => removeItem(item.id)}
-                >
-                  x
-                </button>
-                <img
-                  className="img-sku-cart"
-                  src={item.imagen}
-                  alt={item.nombre}
-                />
+          {cart.map((item) =>
+            item.quantity > 0 ? (
+              <div className="cart-item" key={item.id}>
+                <div>
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={() => removeItem(item.id)}
+                  >
+                    x
+                  </button>
+                  <img
+                    className="img-sku-cart"
+                    src={item.image}
+                    alt={item.title}
+                  />
+                </div>
+                <p className="desc-sku">{item.quantity} </p>
+                <br />
+                <p className="display-sku">{item.title}</p>
               </div>
-              <p className="desc-sku">{item.quantity} </p>
-              <br />
-              <p className="display-sku">{item.nombre}</p>
-            </div>
-          ))}
+            ) : (
+              <div className="cart-item" key={item.id}>
+                <div>
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={() => removeItem(item.id)}
+                  >
+                    x
+                  </button>
+                  <img
+                    className="img-sku-cart"
+                    src={item.image}
+                    alt={item.title}
+                  />
+                </div>
+                <p className="display-sku">{item.title}</p>
+                &ensp;
+                <p className="desc-sku">{item.quantity} </p>
+              </div>
+            )
+          )}
           <div className="cart-total">
-            <h3>
-              Total: ${cart.reduce((a, b) => a + b.precio * b.quantity, 0)}
-            </h3>
+            <h3>Total: ${getTotalPrice()}</h3>
           </div>
           <button className="btn btn-danger btn-sm" onClick={clear}>
             Vaciar Carrito

@@ -53,14 +53,14 @@ export const CartProvider = ({ children }) => {
 
   const getTotalPrice = () => {
     return cart.reduce(
-      (acc, cartItem) => acc + cartItem.precio * cartItem.quantity,
+      (acc, cartItem) => acc + cartItem.price * cartItem.quantity,
       0
     );
   };
 
   //Use this log to see the cart's itmes in the console
 
-  console.log(cart);
+ /*  console.log(cart); */
 
 
   return (
