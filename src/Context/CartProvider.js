@@ -40,7 +40,9 @@ export const CartProvider = ({ children }) => {
   // Use this to clear the cart
 
   const clear = () => {
+    setTimeout(() => {
     setCart([]);
+    }, 2000);
   };
 
     // Use this to get the total quantity of items in the cart
