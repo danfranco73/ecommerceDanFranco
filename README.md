@@ -6,6 +6,8 @@ Explore the docs »
 
 ## [View Demo](#demo) · Report Bug · Request Feature
 
+* ## Summary
+
 * Project: E-commerce app
 * Client: Final project of React js course in Coderhouse
 * Developer: Dan Franco
@@ -14,10 +16,10 @@ Explore the docs »
 
 ### Demo <a name="demo"></a>
 
-Demo de una compra
+* ## Table of Contents
 
-* Table of Contents
-* Built With
+* ### Built With
+
   * React
   * Bootstrap
   * Node
@@ -27,7 +29,8 @@ Demo de una compra
 Getting Started
 To get a local copy up and running follow these simple example steps.
 
-* Pre requisites
+* ### Pre requisites
+
   * npm
   * npm install npm@latest -g
   * Installation
@@ -40,8 +43,11 @@ To get a local copy up and running follow these simple example steps.
 
 [...back to top](#TOP)
 
-* Acknowledgments
-  * Professor Juan Magos
-  * Luciano Giraudi
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* ### Professor [Juan Magos](https://github.com/JuanMagos)
+
+* ### Tutor [Luciano Giraudi](https://github.com/Luagir94/dunderMifflinGiraudi)
 
 [...back to top](#TOP)
