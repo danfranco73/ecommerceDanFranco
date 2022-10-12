@@ -18,6 +18,7 @@ function App() {
           </header>
           <main>
             <Routes>
+              <Route path="FB" link ={"https://www.facebook.com/todopymesmayorista/"} />
               <Route path="/" element={<ItemListContainer />}/>
               <Route path="category/:categoryId" element={<CategoryItems />} />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />

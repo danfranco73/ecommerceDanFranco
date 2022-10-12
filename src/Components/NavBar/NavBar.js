@@ -38,7 +38,11 @@ const NavBar = () => {
                   Yerbas
                 </Link>
               </li>
-              
+              <li className="nav-item">
+                <Link className="nav-link" to="/category/Harinas">
+                  Harinas
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="login">
                   Login
@@ -54,22 +58,32 @@ const NavBar = () => {
                 </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link
+                    <div
                       className="dropdown-item"
-                      to="FB"
                       href="https://www.facebook.com/todopymesmayorista/"
                     >
-                      Facebook
-                    </Link>
+                      <a
+                        href="https://www.facebook.com/todopymesmayorista/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Facebook
+                      </a>
+                    </div>
                   </li>
                   <li>
-                    <Link
+                    <div
                       className="dropdown-item"
-                      to="/item/:itemId"
-                      href="https://www.instagram.com/tpmayorista/"
+                      href="https://www.instagram.com/todopymes/"
                     >
-                      Instagram
-                    </Link>
+                      <a
+                        href="https://www.instagram.com/todopymes/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Instagram
+                      </a>
+                    </div>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="FAQ">
@@ -77,9 +91,18 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="contact">
-                      Contacto
-                    </Link>
+                  <div
+                      className="dropdown-item"
+                      href="https://web.whatsapp.com/"
+                    >
+                      <a
+                        href="https://web.whatsapp.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Contacto
+                      </a>
+                    </div>
                   </li>
                 </ul>
               </li>
