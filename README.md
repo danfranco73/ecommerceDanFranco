@@ -6,17 +6,18 @@ Explore the docs »
 
 ## [View Demo](#demo) · Report Bug · Request Feature
 
-Project: E-commerce app
-Client: Final project of React js course in Coderhouse
-Developer: Dan Franco
-Mail: danielfrancotucuy@gmail.com
-Linkedin: <https://www.linkedin.com/in/daniel-franco-157a99b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFPwB8buNTwyQlj7PLUGe9A%3D%3D>
+* Project: E-commerce app
+* Client: Final project of React js course in Coderhouse
+* Developer: Dan Franco
+* Mail: danielfrancotucuy@gmail.com
+* Linkedin: <https://www.linkedin.com/in/daniel-franco-157a99b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFPwB8buNTwyQlj7PLUGe9A%3D%3D>
 
 ### Demo <a name="demo"></a>
+
 Demo de una compra
 
 * Table of Contents
-  * Built With
+* Built With
   * React
   * Bootstrap
   * Node
@@ -37,10 +38,10 @@ To get a local copy up and running follow these simple example steps.
   * Run the APP
   * npm start;
 
-[...back to top](#TOP))
+[...back to top](#TOP)
 
 * Acknowledgments
   * Professor Juan Magos
   * Luciano Giraudi
 
-[...back to top](#TOP))
+[...back to top](#TOP)
