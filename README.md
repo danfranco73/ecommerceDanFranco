@@ -15,27 +15,28 @@ Linkedin: <https://www.linkedin.com/in/daniel-franco-157a99b8/?lipi=urn%3Ali%3Ap
 Demo
 Demo de una compra
 
-Table of Contents
-Built With
-React
-Bootstrap
-Node
-Firebase
-Moment
+* Table of Contents
+  * Built With
+  * React
+  * Bootstrap
+  * Node
+  * Firebase
+  * Moment
 
 Getting Started
 To get a local copy up and running follow these simple example steps.
 
-Prerequisites
-npm
-npm install npm@latest -g
-Installation
-Clone the repo
-git clone <https://github.com/danfranco73/ecommerceDanFranco.git>
-Install NPM packages
-npm install
-Run the APP
-npm start;
+* Pre requisites
+  * npm
+  * npm install npm@latest -g
+  * Installation
+  * Clone the repo
+  * git clone <https://github.com/danfranco73/ecommerceDanFranco.git>
+  * Install NPM packages
+  * npm install
+  * Run the APP
+  * npm start;
+
 (back to top)
 
 Acknowledgments
