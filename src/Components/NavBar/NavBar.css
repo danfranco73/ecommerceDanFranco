@@ -30,3 +30,9 @@
     border-color: black;
     border-width: 0.2px;    
   }
+
+  .dropdown{
+    background-color: none;
+    border: none;
+   
+  }

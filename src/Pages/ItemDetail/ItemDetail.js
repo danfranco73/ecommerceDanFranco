@@ -4,7 +4,15 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
 
-export const ItemDetail = ({product, nombre, precio, categoria, descripcion, imagen, stock}) => {
+export const ItemDetail = ({
+  product,
+  nombre,
+  precio,
+  categoria,
+  descripcion,
+  imagen,
+  stock,
+}) => {
   const { addToCart, isInCart } = useContext(CartContext);
   const [items, setItems] = useState(0);
 
@@ -27,10 +35,8 @@ export const ItemDetail = ({product, nombre, precio, categoria, descripcion, ima
           <p className="desc-sku">Descripción: {descripcion}</p>
         </div>
         <div className="box2">
-          <p className="precio-sku">${precio} c/u</p>
-          <span>
-            <b>Total: ${items * precio}</b>
-          </span>
+          <p className="precio-sku">$ {precio} c/u</p>
+          <p className="precioT-sku">Monto: $ {items * precio}</p>
           <div className="counter-detail">
             <Counter
               stock={stock}
@@ -39,24 +45,27 @@ export const ItemDetail = ({product, nombre, precio, categoria, descripcion, ima
               setItems={setItems}
             />
           </div>
-          <div>
+          <div className="button-cart">
             <Link to="/Cart">
-              <button 
-              className="btn btn-primary">
-              ir al Carrito
-              </button>
-              </Link>
+              <button className="btn btn-primary">Carrito</button>
+            </Link>
             {items > 0 ? (
               <button
                 className="btn btn-success"
-                onClick={isInCart(product.id)
-                  ? () => alert("El producto ya está en el carrito")
-                  : () => onAdd(product)}
+                onClick={
+                  isInCart(product.id)
+                    ? () => alert("El producto ya está en el carrito")
+                    : () => onAdd(product)
+                }
               >
-               + carrito
+                Agregar
               </button>
             ) : (
-              <button className="btn btn-success btn-sm" disabled hidden></button>
+              <button
+                className="btn btn-success btn-sm"
+                disabled
+                hidden
+              ></button>
             )}
           </div>
         </div>

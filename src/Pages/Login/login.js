@@ -71,7 +71,6 @@ const Login = () => {
           />
           {formErrors.email && <span>{formErrors.email}</span>}
         </div>
-
         <div>
           <label htmlFor="password">Password</label>
           <input
@@ -84,10 +83,8 @@ const Login = () => {
           />
           {formErrors.password && <span>{formErrors.password}</span>}
         </div>
-        <div className="form-footer">
-          <button type="submit">Entrar</button>
-          <button type="submit">Salir</button>
-        </div>
+        <button type="submit">Entrar</button>
+        <button type="submit" >Salir</button>
       </form>
     </div>
   );

@@ -48,7 +48,7 @@ const NavBar = () => {
                   Login
                 </Link>
               </li>
-              <li className="nav-item dropdown bg-info">
+              <li className="nav-item dropdown">
                 <button
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
