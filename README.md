@@ -14,7 +14,7 @@ Explore the docs »
 - Mail: danielfrancotucu@gmail.com
 - Linkedin: <https://www.linkedin.com/in/daniel-franco-157a99b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFPwB8buNTwyQlj7PLUGe9A%3D%3D>
 
-### Demo <a name="demo"></a>
+### Demo
 
 ![Demo de una compra](https://github.com/danfranco73/ecommerceDanFranco/blob/master/public/img/TP-APP.gif?raw=true)
 
