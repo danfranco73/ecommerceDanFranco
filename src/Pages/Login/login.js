@@ -54,7 +54,7 @@ const Login = () => {
 
   return (
     <div className="form-box">
-      <h1>Sign in to continue</h1>
+      <h1>Entra a tu cuenta</h1>
       {Object.keys(formErrors).length === 0 && isSubmitting && (
         <span>Bienvenido</span>
       )}
@@ -62,6 +62,7 @@ const Login = () => {
         <div>
           <label htmlFor="email">Email</label>
           <input
+          className="form-control"
             type="email"
             name="email"
             id="email"
@@ -74,6 +75,7 @@ const Login = () => {
         <div>
           <label htmlFor="password">Password</label>
           <input
+          className="form-control"
             type="password"
             name="password"
             id="password"
@@ -82,8 +84,10 @@ const Login = () => {
           />
           {formErrors.password && <span>{formErrors.password}</span>}
         </div>
-
-        <button type="submit">Sign In</button>
+        <div className="form-footer">
+          <button type="submit">Entrar</button>
+          <button type="submit">Salir</button>
+        </div>
       </form>
     </div>
   );

@@ -10,12 +10,11 @@ export const Cart = () => {
 
   const createOrder = () => {
     const db = getFirestore();
-    /*   const order = collection(db, "orders"); */
     const order = {
       buyers: {
         name: "Juan",
         phone: "123456789",
-        email: "juan@mail.com",
+        email: "",
       },
       items: cart,
       date: moment().format("DD/MM/YYYY"),
@@ -56,9 +55,9 @@ export const Cart = () => {
                     alt={item.title}
                   />
                 </div>
-                <p className="desc-sku">{item.quantity} </p>
+                <p className="items-sku">{item.quantity} un </p>
                 <br />
-                <p className="display-sku">{item.title}</p>
+                <p className="detail-sku">{item.title}</p>
               </div>
             ) : (
               <div className="cart-item" key={item.id}>
@@ -75,15 +74,18 @@ export const Cart = () => {
                     alt={item.title}
                   />
                 </div>
-                <p className="display-sku">{item.title}</p>
+                <p className="items-sku">{item.title}</p>
                 &ensp;
-                <p className="desc-sku">{item.quantity} </p>
+                <p className="detail-sku">{item.quantity} </p>
               </div>
             )
           )}
           <div className="cart-total">
             <h3>Total: ${getTotalPrice()}</h3>
           </div>
+          <button className="btn btn-danger btn-sm" onClick={clear}>
+            Vaciar Carrito
+          </button>
           <div>
             <form className="form">
               <div className="form-group">
@@ -91,7 +93,7 @@ export const Cart = () => {
                 <input type="text" className="form-control" />
               </div>
               <div className="form-group">
-                <label>Telefono</label>
+                <label>Teléfono</label>
                 <input type="text" className="form-control" />
               </div>
               <div className="form-group">
@@ -100,9 +102,7 @@ export const Cart = () => {
               </div>
             </form>
           </div>
-          <button className="btn btn-danger btn-sm" onClick={clear}>
-            Vaciar Carrito
-          </button>
+
           <button
             className="btn btn-primary btn-sm"
             onClick={() => [createOrder(), clear()]}

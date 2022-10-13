@@ -10,8 +10,9 @@
     justify-content: center;
     align-items: center;
     color:white;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-radius: 10px;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
