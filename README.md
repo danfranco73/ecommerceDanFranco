@@ -16,7 +16,7 @@ Explore the docs »
 
 ### Demo
 
-![Demo de una compra](https://github.com/danfranco73/ecommerceDanFranco/blob/master/public/img/TP-APP.gif?raw=true)
+![Demo de una compra](https://github.com/danfranco73/ecommerceDanFranco/blob/main/public/img/TP-APP.gif?raw=true)
 
 - ## Table of Contents
 
