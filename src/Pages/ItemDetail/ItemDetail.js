@@ -40,7 +40,12 @@ export const ItemDetail = ({product, nombre, precio, categoria, descripcion, ima
             />
           </div>
           <div>
-            <Link to="/Cart">ir al Carrito</Link>
+            <Link to="/Cart">
+              <button 
+              className="btn btn-primary">
+              ir al Carrito
+              </button>
+              </Link>
             {items > 0 ? (
               <button
                 className="btn btn-success"
@@ -48,7 +53,7 @@ export const ItemDetail = ({product, nombre, precio, categoria, descripcion, ima
                   ? () => alert("El producto ya está en el carrito")
                   : () => onAdd(product)}
               >
-                + carrito
+               + carrito
               </button>
             ) : (
               <button className="btn btn-success btn-sm" disabled hidden></button>

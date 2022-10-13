@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  border-radius: 10px;
   
 }
 .box {
@@ -30,9 +31,11 @@
 
 .detail-sku {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgb(210, 241, 249);
+  border: solid 0.2px black;
+  border-radius: 10px;
   gap: 10px;
   width: 80%;
   font-size: 15px;
@@ -46,6 +49,7 @@
   font-stretch: condensed;
   border-radius: 5px;
   border: 1px solid black;
+  padding: 5px;
   margin: 10px;
   width: 100%;
 }
@@ -55,10 +59,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid black;
-  gap: 10px;
+  gap: 20px;
   border-radius: 5px;
   margin: 10px;
 }
@@ -71,8 +75,9 @@
  }
 
 .img-sku {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .desc-sku {
