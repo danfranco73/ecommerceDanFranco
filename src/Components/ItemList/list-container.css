@@ -14,3 +14,16 @@
   border-radius: 15px;
   width: 100%;
 }
+
+@media screen and (max-width: 1000px) {
+  .prod {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .prod {
+    grid-template-columns: auto;
+  }
+
+}
