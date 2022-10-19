@@ -1,10 +1,10 @@
 import "./CartImg.css";
-import cartlogo from "../../../public/img/shopping-cart-icon-.jpg";
+import cartlogo from "../../Components/img/shopping-cart-icon-.jpg";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 
 const CartImg = () => {
-  const {  getTotalItems } = useContext(CartContext);
+  const { cart, getTotalItems } = useContext(CartContext);
     
   return (
     <div className="cart-img">
