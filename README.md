@@ -13,6 +13,7 @@ Explore the docs »
 - Developer: Dan Franco
 - Mail: danielfrancotucu@gmail.com
 - Linkedin: <https://www.linkedin.com/in/daniel-franco-157a99b8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFPwB8buNTwyQlj7PLUGe9A%3D%3D>
+- Deployment: <https://my-project-drab-omega.vercel.app/>
 
 ### Demo
 
