@@ -4,7 +4,7 @@ This page simulates an e-commerce of a food and beverage wholesaler
 
 Explore the docs »
 
-## [View Demo](#demo) · Report Bug · Request Feature
+## [View Demo](#demo) · Request Feature
 
 - ## Summary
 
