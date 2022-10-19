@@ -1,5 +1,5 @@
 import "./CartImg.css";
-import cartlogo from "../../Components/img/shopping-cart-icon-.jpg";
+import cartlogo from "../../../public/img/shopping-cart-icon-.jpg";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 
