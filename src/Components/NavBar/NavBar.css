@@ -28,39 +28,22 @@
   border-width: 0.2px;
 }
 
-.dropdown {
-  background-color: none;
-  border: none;
+.navbar-brand .img:hover {
+  border-color: #215fe6;
+  border-width: 0.2px;
 }
 
-/* mobile responsive */
-@media only screen and (max-width: 1000px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-  .navbar-brand {
-    margin-bottom: 1rem;
-  }
+/* mobile responsive max 600px*/
+@media only screen and (max-width: 600px) {
   .navbar-brand .img {
     position: absolute;
     top: 15%;
     right: 0;
-    width: 20%;
-    height: 20%;
+    width: auto;
+    height: 55%;
     border-radius: 300px;
     border: solid;
     border-color: black;
     border-width: 0.2px;
-  }
-  .navbar-nav {
-    width: 100%;
-  }
-  .navbar-nav .nav-item {
-    width: 100%;
-  }
-  .navbar-nav .nav-item .nav-link {
-    text-align: center;
   }
 }
