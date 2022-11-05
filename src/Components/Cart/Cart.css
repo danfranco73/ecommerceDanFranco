@@ -107,17 +107,31 @@
   padding: 10px;
   border-radius: 10px;
 }
-
+/* mobile responsive */
 @media screen and (max-width: 768px) {
   .cart-box {
-   /* centrar el box a la pantalla mobile */
-    margin-left: 0;
     width: 100%;
-    height: auto;
-    margin-top: 150;
-    padding: 0;
-
-
-
+    margin-left: 0px;
+  }
+  .cart-inside {
+    width: 100%;
+  }
+  .img-sku-cart {
+    width: 100%;
+  }
+  .items-sku {
+    width: 100%;
+  }
+  .detail-sku {
+    width: 100%;
+  }
+  .cart-item {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
   }
 }
