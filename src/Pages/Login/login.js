@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const intialValues = { email: "", password: "" };
@@ -10,8 +11,7 @@ const Login = () => {
 
   const submit = () => {
     console.log("Form submitted");
-    };
-    
+  };
 
   //input change handler
   const handleChange = (e) => {
@@ -50,7 +50,7 @@ const Login = () => {
     if (Object.keys(formErrors).length === 0 && isSubmitting) {
       submit();
     }
-  }, [ formErrors, isSubmitting]);
+  }, [formErrors, isSubmitting]);
 
   return (
     <div className="form-box">
@@ -62,7 +62,7 @@ const Login = () => {
         <div>
           <label htmlFor="email">Email</label>
           <input
-          className="form-control"
+            className="form-control"
             type="email"
             name="email"
             id="email"
@@ -74,7 +74,7 @@ const Login = () => {
         <div>
           <label htmlFor="password">Password</label>
           <input
-          className="form-control"
+            className="form-control"
             type="password"
             name="password"
             id="password"
@@ -84,7 +84,10 @@ const Login = () => {
           {formErrors.password && <span>{formErrors.password}</span>}
         </div>
         <button type="submit">Entrar</button>
-        <button type="submit" >Salir</button>
+        <button type="submit">Salir</button>
+        <Link to="/">
+          <button className="btn btn-primary btn-sm">Volver</button>
+        </Link>
       </form>
     </div>
   );

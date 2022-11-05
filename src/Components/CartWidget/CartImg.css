@@ -12,3 +12,12 @@
   align-items: center;
   font-size: 10px;
   }
+
+  /* mobile responsive */
+  @media only screen and (max-width: 1000px) {
+    .item-box {
+      flex-direction: column;
+      margin-top: 80px;
+      margin-right: 50px;
+    }
+  }

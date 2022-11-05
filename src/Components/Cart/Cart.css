@@ -110,7 +110,14 @@
 
 @media screen and (max-width: 768px) {
   .cart-box {
+   /* centrar el box a la pantalla mobile */
+    margin-left: 0;
     width: 100%;
-    margin-left: 0px;
+    height: auto;
+    margin-top: 150;
+    padding: 0;
+
+
+
   }
 }
