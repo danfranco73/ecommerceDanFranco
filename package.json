@@ -38,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This page simulates an e-commerce of a food and beverage wholesaler",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
